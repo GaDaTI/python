@@ -6,12 +6,25 @@ chama esse método se ele existir. O método recebe dois parâmetros: self, que 
 o nome do atributo a ser excluído.
 """
 class Pessoa:
-    def __init__(self, nome):
+    def __init__(self, nome=None, idade=None):
         self.nome = nome
+        self.idade = idade
 
     def __delattr__(self, name):
         print(f"O atributo {name} foi excluído.")
         super().__delattr__(name)
 
-p = Pessoa("João")
-del p.nome
+
+""" CASO 1 """
+aluno = Pessoa()
+
+print(aluno.nome) # None
+print(aluno.idade) # None
+del aluno.nome
+print(aluno.nome) # AttributeError: 'Pessoa' object has no attribute 'nome'
+aluno.nome = "Paulo"
+aluno.idade = 23
+print(aluno.nome) # Paulo
+print(aluno.idade) # 23
+
+
