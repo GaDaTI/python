@@ -32,7 +32,7 @@ print(email[ -17 : -10])
 print(email[     : -10])
 
 # 7.4 Operações com String
-# 7.4 .1 -  str -> transforma número em string;
+# 7.4 .1 -  Metodo str -> transforma número em string;
 numero = 7
 print(type(numero), numero) #<class 'int'> 7
 numero = str(numero)
@@ -47,17 +47,34 @@ lucro = faturamento  -  custo
 #O faturamento da loja foi de : 2000
 print('O faturamento da loja foi de : ' + str(faturamento))
 
-# 7.4 .2 -  str -> transforma número em string;
+# 7.4 .2 -  Metodo format
+faturamento =  2000
+custo = 500
+lucro = faturamento  -  custo
+
+#IndexError : Replacement index 1 out of range for positional args tuple
+"""  print('O faturamento foi de: { }. O custo foi de { } e o Lucro foi de { }'.format(faturamento)) """
+
+# O faturamento da loja foi de : 2000
+#print('O faturamento foi de: { }. O custo foi de { } e o Lucro foi de { }'.format(faturamento, custo, lucro))
 
 
+# Alterar a ordem em que as variáveis aparecem.
+#print("O faturamento foi de: {1}. O custo foi de {2} e o Lucro foi de {0} ".format(faturamento, custo, lucro))
+
+# 7.4 .3 -  Uso %s e %d
+#print(" O faturamento foi de: %s " % "faturamento")
 
 
-
-
-
-
-
-
-
+# 7.4 .4 -  Uso do in
 # in -> verifica se um texto está contido dentro do outro
+email ='gabriel@gmail.com'
+print("@" in "gabriel@gmail.com") # Retorna a resposta : True
+print("@" in "gabriel.gmail.com") # Retorna a resposta : False
+
+# 7.4 .4 -  Metodos
+metodos = dir(str())
+
+for metodo in metodos:
+    print(metodo)
 
