@@ -56,14 +56,18 @@ lucro = faturamento  -  custo
 """  print('O faturamento foi de: { }. O custo foi de { } e o Lucro foi de { }'.format(faturamento)) """
 
 # O faturamento da loja foi de : 2000
-#print('O faturamento foi de: { }. O custo foi de { } e o Lucro foi de { }'.format(faturamento, custo, lucro))
+faturamento =  2000
+custo = 500
+lucro = faturamento  -  custo
+print('O faturamento foi de: {}. O custo foi de {} e o Lucro foi de {}'.format(faturamento, custo, lucro))
 
 
 # Alterar a ordem em que as variáveis aparecem.
 #print("O faturamento foi de: {1}. O custo foi de {2} e o Lucro foi de {0} ".format(faturamento, custo, lucro))
 
 # 7.4 .3 -  Uso %s e %d
-#print(" O faturamento foi de: %s " % "faturamento")
+faturamento =  29830
+print(" O faturamento foi de: %d " % faturamento)
 
 
 # 7.4 .4 -  Uso do in
@@ -73,8 +77,8 @@ print("@" in "gabriel@gmail.com") # Retorna a resposta : True
 print("@" in "gabriel.gmail.com") # Retorna a resposta : False
 
 # 7.4 .4 -  Metodos
-metodos = dir(str())
+#metodos = dir(str())
 
-for metodo in metodos:
-    print(metodo)
+#for metodo in metodos:
+#    print(metodo)
 
