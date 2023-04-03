@@ -7,12 +7,14 @@ class ContaCorrente:
         self.cpf = cpf
         self.saldo = 0
         self.limite = None
+        #self.agencia = agencia
+        #self.numero_conta = numero_conta
     def consultar_saldo(self):
         texto = 'O seu saldo atual é de {}'.format(self.saldo)
         return texto
-    def limite_conta(self):
-        self.limite =  -1000
-        return self.limite
+    def _limite_conta(self):
+        self.limite  =  -1000
+        return  self.limite
     def sacar(self, valor):
         if self.saldo - valor < self.limite_conta( ):
             print("Você não possui saldo suficiente !")
@@ -35,7 +37,7 @@ if __name__ == '__main__':
     print(cliente.consultar_saldo())
     cliente.sacar(934)
     print(cliente.consultar_saldo())
-   print(cliente.limite_conta)
+
     # print(cliente.nome) # Gabriel
     # print(cliente.cpf) # 453.923.225-49
 
