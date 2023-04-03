@@ -2,17 +2,17 @@
 
 class TV:
 
-    def __init__(self):
+    def __init__(self,  canal, estado):
         self.tamanho = 20
         self.cor = 'Preta'
-        self.canal = 'Netflix'
+        self.canal = canal
         self.volume = 10
-        self.ligada =  False
+        self.estado =  estado
     def mudar_canal(self, novo_canal):
         self.canal = novo_canal
 
-    def mudar_volume(self):
-        pass
+    def mudar_volume(self, novo_volume):
+        self.volume = novo_volume
 
     def ligar_desligar(self):
         pass
@@ -21,8 +21,10 @@ class TV:
         pass
 
 
-tv_da_sala = TV()
-
+tv_da_sala = TV('Globo', 'Ligada')
+print(tv_da_sala.volume)
+tv_da_sala.mudar_volume(40)
+print(tv_da_sala.volume)
 print(tv_da_sala.canal) # Netflix
 tv_da_sala.mudar_canal('Disney Plus')
 print(tv_da_sala.canal)
