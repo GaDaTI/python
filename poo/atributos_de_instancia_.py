@@ -46,12 +46,28 @@ mappingproxy({'__dict__': <attribute '__dict__' of 'HtmlDocument' objects>,
 #pprint(home.__dict__) # {'version': 8}
 
 """  ALTERANDO ATRIBUTOS DE CLASSE REFLETIRÃO NAS INSTÂNCIAS DA CLASSE """
-class HtmlDocument5:
+#class HtmlDocument5:
+#    version = 5
+#    extension = 'html'
+
+#home_site = HtmlDocument5()
+
+#HtmlDocument5.media_type = 'text/html'
+
+#print(home_site.media_type) # text/html
+
+"""  INICIALIZANDO VARIAVEIS DE INSTÂNCIA  """
+
+class HtmlDocument23:
     version = 5
     extension = 'html'
 
-home_site = HtmlDocument5()
+    def __init__(self, name, contents):
+        self.name = name
+        self.contents = contents
 
-HtmlDocument5.media_type = 'text/html'
 
-print(home_site.media_type) # text/html
+if __name__ == '__main__' :
+    blank = HtmlDocument23('Blank', 'Main')
+    print(blank.contents) # Main
+    print(blank.name) # Blank
