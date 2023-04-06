@@ -57,17 +57,40 @@ Para garantir a semantica correta  teriamos que fazer
 #         print(metodo)
  """
 
+"""  A CLASSE DE PROPIEDADE """
+
+
 
 class Person:
     def __init__(self, name, age):
         self.name = name
-        self.set_age(age)
+        self.age = age
+
     def set_age(self,  age):
-        if  age <= 0:
+        if age <= 0:
             raise ValueError("The value must be positive")
         self._age = age
+
     def get_age(self):
         return  self._age
+
+    age = property(fget=get_age, fset=set_age)
+
+
+
+if __name__ == '__main__' :
+    from pprint import  pprint
+    """  OBJETO DE PROPIEDADE : """
+    #print(Person.age) # <property object at 0x7f5d0b71f1a0>
+
+
+    pessoa = Person('Bau', 23)
+    pprint(pessoa.__dict__) # {'name': 'Bau', '_age': 23}
+
+    pessoa.age = 19
+    pprint(Person.__dict__)
+
+
 
 
 
