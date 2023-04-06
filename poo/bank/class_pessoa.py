@@ -5,21 +5,31 @@ class Pessoa:
 
     pais = {  'BR' : 'Brasil' }
 
-    def __init__(self):
+    def __init__(self, nome, sobrenome, idade, dia_de_nascimento, mes_de_nascimento, ano_de_nascimento, estado_civil, cpf, rg):
         """
         Dados de uma pessoa
         """
-        self.nome = None
-        self.sobrenome = None
-        self.idade = None
-        self.dia_de_nascimento = None
-        self.mes_de_nascimento = None
-        self.estado_civil = None
-        self.cpf = None
-        self.rg = None
+        self.__nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
+        self.dia_de_nascimento = dia_de_nascimento
+        self.mes_de_nascimento = mes_de_nascimento
+        self.ano_de_nascimento = ano_de_nascimento
+        self.estado_civil = estado_civil
+        self.cpf = cpf
+        self.rg = rg
+        print(f"Construindo o objeto ... {self}")
 
-    def dados_da_mae(self):
-        pass
+    def __str__(self):
+    nome = nome
+    sobrenome = sobrenome
+    idade = idade
+    dia_de_nascimento = dia_de_nascimento
+    mes_de_nascimento = mes_de_nascimento
+    ano_de_nascimento = ano_de_nascimento
+    estado_civil = estado_civil
+    cpf = cpf
+    rg = rg 
 
 
 
