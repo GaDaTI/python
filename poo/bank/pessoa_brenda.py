@@ -1,7 +1,13 @@
 from class_pessoa import Pessoa
-#from pprint import  pprint
+from pprint import  pprint
+
+
+brenda = Pessoa( 'Brenda', 'Albuquerque',  '23',  '14',  '02' ,  '1983',  'solteira', 'Salvador', 'BA')
+
 
 if __name__ == '__main__' :
-    brenda = Pessoa( 'Brenda', 'Albuquerque',  '23',  '14',  '02' ,  '1983',  'solteira', 'Salvador', 'BA')
+    for keys, value in brenda.__dict__.items():
+        print(value)
+
 
 
