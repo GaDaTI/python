@@ -11,7 +11,10 @@ class Pessoa:
         """
         self._nome = nome
         self._sobrenome = sobrenome
-        self._estado_civil = estado_civil
+
+    def adicionais(self):
+        self.
+
 
 
 

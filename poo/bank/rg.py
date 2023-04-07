@@ -1,0 +1,1 @@
+from certidao_de_nascimento import  CertidaoDeNascimento
