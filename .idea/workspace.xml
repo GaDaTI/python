@@ -8,8 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poo/bank/certidao_de_nascimento.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/certidao_de_nascimento.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poo/bank/class_pessoa.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/class_pessoa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/bank/class_pessoa_mae.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/class_pessoa_mae.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poo/bank/endereco.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/endereco.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poo/bank/pessoa_brenda.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/pessoa_brenda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/bank/rg.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/rg.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

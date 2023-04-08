@@ -1,10 +1,9 @@
 from class_pessoa import Pessoa
+from rg import  RegistroCivil
 
 
-class PessoaMae(Pessoa):
-    filho = [ ]
+class PessoaMae(RegistroCivil):
 
     def __init__(self):
-        self.filho = PessoaMae.filho
-        super()self.nacionalidade
+        PessoaMae.filho.append(self.filho)
 
