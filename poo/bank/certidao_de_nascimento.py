@@ -14,4 +14,7 @@ class CertidaoDeNascimento(Pessoa, Endereco):
         self._naturalidade = naturalidade
         self._unidade_fiscal = uf
 
+    def endereco_nascimento(cls, rua, bairro, nome, cidade, estado):
+       pass
+
 # if __name__ == '__main__' :

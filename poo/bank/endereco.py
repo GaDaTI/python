@@ -10,15 +10,15 @@ class Endereco:
 
     @classmethod
     def endereco_atual(cls):
-        pass
+        return Endereco(rua, bairro, nome, cidade, estado)
 
     @classmethod
-    def endereco_nascimento(cls):
-        pass
+    def endereco_nascimento(cls, rua, bairro, nome, cidade, estado):
+        return Endereco(rua, bairro, nome, cidade, estado)
 
     @classmethod
-    def endereco_comercial (cls):
-        pass
+    def endereco_comercial (cls, rua, bairro, nome, cidade, estado):
+        return Endereco(rua, bairro, nome, cidade, estado)
 
 
 

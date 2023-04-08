@@ -7,11 +7,8 @@
     <list default="true" id="ac0a7c92-7b78-4215-85a3-02073f6f651f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poo/bank/certidao_de_nascimento.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/certidao_de_nascimento.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/bank/class_pessoa.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/class_pessoa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/bank/class_pessoa_mae.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/class_pessoa_mae.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poo/bank/endereco.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/endereco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/bank/pessoa_brenda.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/pessoa_brenda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/bank/rg.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/rg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/bank/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/poo/bank/teste.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.pessoa_brenda">
+  <component name="RunManager" selected="Python.teste">
     <configuration name="certidao_de_nascimento" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hashtag" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,27 +123,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pessoa_pablo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hashtag" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/poo/bank" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/poo/bank/pessoa_pablo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="pessoa_washigton" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hashtag" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,13 +144,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="teste" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hashtag" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/poo/bank" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/poo/bank/teste.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.teste" />
         <item itemvalue="Python.pessoa_brenda" />
         <item itemvalue="Python.certidao_de_nascimento" />
         <item itemvalue="Python.class_cliente" />
         <item itemvalue="Python.pessoa_washigton" />
-        <item itemvalue="Python.pessoa_pablo" />
       </list>
     </recent_temporary>
   </component>
