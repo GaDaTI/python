@@ -1,83 +1,69 @@
-"""  Atributos privados do Python """
+"""  Atributos privados do Python
 
-""" Introdução ao encapsulamento em Python 
-1. O encapsulamento é um dos quatro conceitos fundamentais na programação orientada a objetos, incluindo abstração, encapsulamento, herança 
-e polimorfismo.
-é o empacotamento de dados e funções que funcionam nesses dados em um único objeto.
-"""
-# Exemplo de encapsulamento Python
+1. Conceitos fundaementais da programação orientada a objeto:
 
-"""
-class Counter:
-    def __init__(self):
-        self.current = 0
+            1.1 - Encapsulamento
+            1.2 -  Abstração
+            1.3 -  Herança
+            1.4 - Polimorfismo
 
-    def increment(self):
-        self.current += 1
 
-    def value(self):
-        return self.current
+1.1 - Encapsulamento :
 
-if __name__ == '__main__' :
-    relogio = Counter()
-    print(relogio.value())
-    relogio.increment()
-    relogio.increment()
-    relogio.increment()
-    print(relogio.value())
-    relogio.current = - 999
-    print(relogio.value()) # - 999
+        - > O encapsulamento em Python descreve o conceito de agrupar dados e metodos em uma unica unidade.
 
-"""
+        - > Exemplo:  Uma classe
 
-"""  Atributos privados  
-Python não tem um conceito de atributos privados. Em outras palavras, todos os atributos são acessíveis de fora de uma classe.
-Por convenção, você pode definir um atributo privado prefixando um único sublinhado (_):
-_attribute
+        - > Liga todos o membros de dados ( variaveis de instancia) e metodos  em uma unica unidade.
 
-class Counter:
-    def __init__(self):
-        self._current = 0
 
-    def increment(self):
-        self._current += 1
+1.1.1 - Acesso as  atributos :
 
-    def value(self):
-        return self.__current
+        1.1.1.a - Atributos Publicos:  Acessível em qualquer lugar fora da classe.
 
-if __name__ == '__main__' :
-    relogio = Counter()
-    print(relogio.value())
-    relogio._current = - 999
-    print(relogio.value())  # - 999
-    
+
+        1.1.1.b- Atributos Privados: Acessível dentro da classe
+
+
+        1.1.1.c- Atributos Protegidos: Acessível dentro da classe e suas subclasses
+
 
 """
 
-"""  Alteração de nome com sublinhados duplos
- Se você prefixar um nome de atributo com sublinhados duplos ( __) assim:
- __attribute
- O Python mudará automaticamente o nome do __attribute para:
- _class__attribute
- 
- """
-class Counter:
-    def __init__(self):
-        self.__current = 0
 
-    def increment(self):
-        self.__current += 1
+class Employee:
 
-    def value(self):
-        return self.__current
+    # Metodo inicializador
+    def __init__(self, name, salary):
+        # Atributos privados de instancia
+        self.__name = name
+        self.__salary = salary
 
-if __name__ == '__main__' :
-    relogio = Counter()
-    # Não poderá acessar o atributo diretamente de fora de uma classe
-    # instance.__attribute
-    #No entando ainda será possível acessar por meio do
-    # instance.-Class__attribute
-    print(relogio._Counter__current)
+    # Metodo publico de instancia
+    def show(self):
+        return print("Name: ", self.__name, "Salary: ", self.__salary)
+
+
+if __name__ == '__main__':
+    # Instaciando um objeto
+    funcionario = Employee('Jessica', 10000)
+
+    # Tentativa de acesso dos atributos  privados de instancia da classe Employee
+    # Retorna um AttributeError: 'Employee' object has no attribute '__name'
+    #print("Name: ", funcionario.__name, "Salary: ", funcionario.__salary)
+
+
+    # FORMAS DE ACESSO A ATRIBUTOS PRIVADOS
+
+    # METODO 1 : NAME MANGLING
+    # Trata-se de uma excessão para acessar atributos privados fora da classe NÃO RECOMENDADA !
+    print("Name: ", funcionario._Employee__name, "Salary: ", funcionario._Employee__name)
+
+    # METODO 2:  METODOS PUBLICOS PARA ACESSO ATRIBUTOS PRIVADOS
+    # É a forma adotada por convenção
+    funcionario.show() # Name:  Jessica Salary:  10000
+
+
 
 
 
