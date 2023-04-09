@@ -1,3 +1,6 @@
+from datas import Data
+
+
 class ContaCorrente:
 
     def __init__(self, numero, titular, saldo, limite):
@@ -21,12 +24,17 @@ class ContaCorrente:
     def depositar(self, valor):
         self.saldo += valor
 
+
     def extrato(self):
-        texto = f"Titular: {self.titular}  |  Saldo em conta:  R$  {self.saldo}"
+        texto = f"Titular: {self.titular}  |  Saldo em conta:  R$  {self.saldo}" | f"{data}"
         return texto
 
 
 if __name__ == '__main__':
+
+
+
+
     #Instanciando um objeto
     conta_corrente_mauricio = ContaCorrente(3.452 - 1, 'Mauricio', 323.87, 100)
 
