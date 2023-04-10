@@ -13,13 +13,14 @@ class Cliente:
         valor_total = self.__saldo + self.__limite
         if valor < valor_total:
             return True
+        return False
 
     def sacar(self, valor):
         response = self.__validar(valor)
         if response:
             self.__saldo -= valor
         else:
-            texto = f'SALDO: {self.__saldo} |  Valor insuficiente !'
+            texto = f'SALDO: {self.__saldo} |  VALOR SOLICITADO: {valor}  |  SALDO INSUFICIENTE !'
             return print(texto)
 
     def depositar(self, valor):
@@ -37,7 +38,8 @@ class Cliente:
 if __name__ == '__main__':
     anee = Cliente(5.921 - 8, 1000, 'Anee', 100)
     print(anee.saldo)
-    anee.sacar(100000)
+    anee.sacar(75)
     print(anee.saldo)
+
 
 
