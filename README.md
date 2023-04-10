@@ -1,6 +1,12 @@
  
+ <div align="center">
+    <img width="150px" title="icon_python" src="![icon_](https://user-images.githubusercontent.com/61427998/230957822-61c3d9bd-dc48-44d2-87d8-30a4c1ce61d0.png)"/>
+<div>
 
-![icon_](https://user-images.githubusercontent.com/61427998/230957822-61c3d9bd-dc48-44d2-87d8-30a4c1ce61d0.png) #PYTHON
+
+
+
+#PYTHON
 
 Repositorio de estudo da linguagem
 
