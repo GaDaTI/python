@@ -7,8 +7,12 @@
 </div>
 
 
+<div align="center">
 
-#PYTHON
+ <h1>PYTHON</h1>
+
+</div>
+
 
 Repositorio de estudo da linguagem
 
