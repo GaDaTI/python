@@ -6,14 +6,21 @@ class Cliente:
         self.titular = titular
         self.__limite = limite
 
+    def extrato(self):
+        pass
 
-    @property
-    def __verificar(self):
-        if self.__limite < 10:
+    def __validar(self, valor):
+        valor_total = self.__saldo + self.__limite
+        if valor < valor_total:
             return True
 
     def sacar(self, valor):
-        self.__saldo -= valor
+        response = self.__validar(valor)
+        if response:
+            self.__saldo -= valor
+        else:
+            texto = f'SALDO: {self.__saldo} |  Valor insuficiente !'
+            return print(texto)
 
     def depositar(self, valor):
         self.__saldo -= valor
@@ -27,12 +34,10 @@ class Cliente:
         return self.__limite
 
 
-
-
-
-
-
 if __name__ == '__main__':
     anee = Cliente(5.921 - 8, 1000, 'Anee', 100)
     print(anee.saldo)
-    print(anee.limite)
+    anee.sacar(100000)
+    print(anee.saldo)
+
+
