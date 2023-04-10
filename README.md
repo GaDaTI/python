@@ -10,10 +10,11 @@
 <div align="center">
 
  <h1>PYTHON</h1>
+ <P>Repositorio para estudo da linguagem</P>
 
 </div>
 
 
-Repositorio de estudo da linguagem
+
 
 
