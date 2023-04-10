@@ -14,7 +14,9 @@ class Cliente:
 
 
 if __name__ == '__main__':
-    pessoa = Cliente("Augus")
+    pessoa = Cliente( 'Um')
+    print(pessoa.nome)
+    pessoa.nome = "Augus"
     print(pessoa.nome)
     pessoa.nome = "depende"
     print(pessoa.nome)
