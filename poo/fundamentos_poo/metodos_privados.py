@@ -6,31 +6,30 @@ class Cliente:
         self.titular = titular
         self.__limite = limite
 
+
+    @property
+    def __verificar(self):
+        if self.__limite < 10:
+            return True
+
+    def sacar(self, valor):
+        self.__saldo -= valor
+
+    def depositar(self, valor):
+        self.__saldo -= valor
+
     @property
     def saldo(self):
         return self.__saldo
 
-    @saldo.setter
-    def saldo(self, valor):
-        self.__saldo += valor
-
     @property
     def limite(self):
-        self.__limite = self.__verificar()
         return self.__limite
 
-    @limite.setter
-    def limite(self, valor):
-        if self.__verificar(valor) == True:
-            self.__limite -= 99
-            return self.__limite
-        return self.__limite
 
-    @property
-    def __verificar(self):
-        if valor < 10:
-            self.__limite += 17
-        return self.__limite
+
+
+
 
 
 if __name__ == '__main__':
