@@ -13,7 +13,23 @@
  <P>Repositorio para estudo da linguagem</P>
 
 </div>
-
+<table>
+  <tr>
+    <th>Coluna 1</th>
+    <th>Coluna 2</th>
+    <th>Coluna 3</th>
+  </tr>
+  <tr>
+    <td>Item 1</td>
+    <td>Item 2</td>
+    <td>Item 3</td>
+  </tr>
+  <tr>
+    <td>Item 4</td>
+    <td>Item 5</td>
+    <td>Item 6</td>
+  </tr>
+</table>
 
 
 
