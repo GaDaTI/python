@@ -10,26 +10,70 @@
 <div align="center">
 
  <h1>PYTHON</h1>
- <P>Repositorio para estudo da linguagem</P>
+ <h2>Repositorio para estudo da linguagem</h2>
 
 </div>
-<table>
+
+<div>
+<table style="text-align:center;">
   <tr>
-    <th>Coluna 1</th>
-    <th>Coluna 2</th>
-    <th>Coluna 3</th>
+    <th>SEÇÃO</th>
+    <th>TOPICO</th>
+    <th>CONTEUDO</th>
   </tr>
   <tr>
-    <td>Item 1</td>
-    <td>Item 2</td>
-    <td>Item 3</td>
+    <td>1</td>
+    <td>
+     <ul>
+      <li>ESTRUTURA LOGICA</li>
+      <li>ESTRUTURA CONDICIONAL</li>       
+     </ul>
+    </td>
+    <td>
+      <ul style="text-align:left;">
+        <li>IF  ELSE   ELIF</li>
+        <li>AND OR NOT IS</li>
+        <li>Item 3.3</li>
+      </ul>
+    </td>
   </tr>
   <tr>
-    <td>Item 4</td>
+    <td>2</td>
     <td>Item 5</td>
-    <td>Item 6</td>
+    <td>
+      <ul style="text-align:left;">
+        <li>Item 6.1</li>
+        <li>Item 6.2</li>
+        <li>Item 6.3</li>
+      </ul>
+    </td>
   </tr>
+  <tr>
+    <td>3</td>
+    <td>Item 5</td>
+    <td>
+      <ul style="text-align:left;">
+        <li>Item 6.1</li>
+        <li>Item 6.2</li>
+        <li>Item 6.3</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Item 5</td>
+    <td>
+      <ul style="text-align:left;">
+        <li>Item 6.1</li>
+        <li>Item 6.2</li>
+        <li>Item 6.3</li>
+      </ul>
+    </td>
+  </tr>
+ 
 </table>
+
+</div>
 
 
 
