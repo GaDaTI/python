@@ -75,5 +75,6 @@ if __name__ == '__main__' :
 
     filmes_e_series = [vingadores, atlanta, demolidor, tmep]
     playlist_fim_de_semana = Playlist('Fim de semana', filmes_e_series)
+
     for item in playlist_fim_de_semana.programas:
         print(item)
